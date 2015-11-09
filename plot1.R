@@ -21,5 +21,6 @@ png("plot1.png")
 plot(NEIYearlyEmissions, 
     xlab = "Year",
     ylab = "Emissions in Tons",
+    main = "Total PM2.5 Emissions in United States",
     col = 2, cex=3, pch=20, type="b")
 dev.off()

@@ -18,5 +18,7 @@ NEIYearlyEmissionsBaltimore <-
 
 #Plot2: Baltimore total emissions by year
 png("plot2.png")
-plot(NEIYearlyEmissionsBaltimore, col=2, cex=3, pch=20, type="b")
+plot(NEIYearlyEmissionsBaltimore, 
+     main = "Total PM2.5 Emissions in Baltimore",
+     col=2, cex=3, pch=20, type="b")
 dev.off()
