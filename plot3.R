@@ -18,4 +18,4 @@ NEIYearlyEmissionsBaltimoreByType <-
 
 # Plot3: Plot Baltimore emissions by year across 4 "by type" facets in a ggplot panel.
 ggplot(NEIYearlyEmissionsBaltimoreByType, aes(year,YearlyEmissionsInTons)) + geom_point() + geom_line() + facet_grid(. ~ type)
-ggsave("plot3.png", width=4, height=4, dpi=100)
+ggsave("plot3.png", width=8, height=4, dpi=100)
