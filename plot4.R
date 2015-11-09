@@ -21,5 +21,7 @@ NEICoalByYear <-
 
 # Plot4: Coal combustion by year
 png("plot4.png")
-plot(NEICoalByYear, col=2, cex=3, pch=20, type="b")
+plot(NEICoalByYear, 
+     main = "Total PM2.5 emissions from coal combustion sources",
+     col=2, cex=3, pch=20, type="b")
 dev.off()
