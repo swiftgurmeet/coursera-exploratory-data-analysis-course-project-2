@@ -19,5 +19,7 @@ NEIBaltimoreOnRoad <-
 
 # Plot5: Motor Vehicle emissions by year in Baltimore
 png("plot5.png")
-plot(NEIBaltimoreOnRoad, col=2, cex=3, pch=20, type="b")
+plot(NEIBaltimoreOnRoad, 
+     main = "Total Motor Vehicle PM2.5 emissions in Baltimore",
+     col=2, cex=3, pch=20, type="b")
 dev.off()
