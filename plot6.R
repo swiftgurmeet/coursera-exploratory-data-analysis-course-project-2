@@ -21,5 +21,7 @@ NEIBaltimoreAndLosAngelesOnRoad <-
 # Plot6: Use qplot to simultaneously plot Baltimore and Los Angeles Motor Vehicle data by year and coded by color
 # I could plot the relative change after normalising the values but then absolute values can't be inferred.
 # Set finer yticks for better resolution
-qplot(year,YearlyEmissionsInTons, data = NEIBaltimoreAndLosAngelesOnRoad, color = region, geom="line") + scale_y_continuous(breaks=seq(0,10000,100))
+qplot(year,YearlyEmissionsInTons, data = NEIBaltimoreAndLosAngelesOnRoad, color = region, geom="line") +
+    scale_y_continuous(breaks=seq(0,10000,100)) + 
+    labs(title = "Total Motor Vehicle PM2.5 emissions in Baltimore and Los Angeles")
 ggsave("plot6.png", width=8, height=8, dpi=100)
